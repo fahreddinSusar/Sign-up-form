@@ -12,9 +12,41 @@
     <div class="container">
         <div class="logo">WE-SCI</div>
         <div class="sign-up-card">
-            <form action="" method="get">
-
+          <div class="card-header">
+            <p>This is not a real online service! But you can pretend to be a scientist and fill this form. I know it is your dream to become a scientist and do boring stuff.</p>
+            <p>Sign-up now to get started you piece of shit.</p>
+          </div>
+            <form action="http://httpbin.org/post" method="get">
+              <div class="form-inputs">
+                <p>Let's get started</p>
+              <div class="form-element">
+                <label for="user-first-name">FIRST NAME</label><br>
+                <input type="text" placeholder="Thor" id="user-first-name" name="user-first-name">
+              </div>
+              <div class="form-element">
+                <label for="user-last-name">LAST NAME</label><br>
+                <input type="text" placeholder="Lightningking" id="user-last-name" name="user-last-name">
+              </div>
+              <div class="form-element">
+                <label for="user-email">E-MAIL</label><br>
+                <input type="email" placeholder="kingThor@intergalaxy.plnt" id="user-email" name="user-email">
+              </div>
+              <div class="form-element">
+                <label for="user-phone">PHONE NUMBER</label><br>
+                <input type="text" id="user-phone" name="user-phone">
+              </div>
+              <div class="form-element">
+                <label for="user-password">PASSWORD</label><br>
+                <input type="password" id="user-password" name="user-password">
+              </div>
+              <div class="form-element">
+                <label for="user-password-confirm">CONFIRM PASSWORD</label><br>
+               <input type="password" id="user-password-confirm" name="user-password-confirm">
+              </div>
+              </div>
+              <button type="submit">Create Account</button>
             </form>
+          <p>Already have an account? <a target="_blank" class="log-in-text">Log in</a></p>
         </div>
         
     </div>
