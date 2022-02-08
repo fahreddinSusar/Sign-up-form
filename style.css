@@ -1,5 +1,9 @@
+
 * {
     box-sizing: border-box;
+}
+:root {
+  --background-color: rgb(186, 207, 224);
 }
 @font-face {
     font-family: "BlackOpsOne-Regular";
@@ -20,7 +24,7 @@ body {
 }
 .container {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: space-between;
 
@@ -28,7 +32,7 @@ body {
 .logo {
     width: 380px;
     height: 100px;
-    margin: auto;
+    margin: 250px auto;
     background-color: rgba(176, 206, 231,0.5);
     font-family: "BlackOpsOne-Regular", sans-serif;
     font-size: 48px;
@@ -38,7 +42,63 @@ body {
     letter-spacing: 5px;
 }
 .sign-up-card {
-    background-color: lightblue;
+    background-color: var(--background-color);
     width: 60%;
-    height: 100%;
+    height: 100vh;
+}
+.card-header {
+  width: auto;
+  margin: 10vh auto auto;
+  background-color: rgba(200, 215, 227);
+  padding: 1rem 1rem;
+  font-size: 20px;
+}
+.card-header > p {
+  width: 72ch;
+  margin-left: 5rem;
+}
+.form-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  width: auto;
+  padding: 1rem 5rem;
+  background-color: rgb(228, 234, 240);
+}
+.form-element {
+  width: max(50%, 250px);
+  height: 60px; 
+  margin: 0.5rem 0;
+}
+.form-inputs > p {
+  width: 100%;
+  font-size: 1.5rem;
+}
+input {
+  width: max(70%, 150px);
+  height: 2rem;
+  margin-top: 0.25rem;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+button[type="submit"] {
+  height: 50px;
+  width: 200px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: rgb(108, 171, 235);
+  margin: 2rem 5rem 1rem;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0px 0px 33px 1px white;
+}
+button[type="submit"]:hover {
+  background-color: rgb(41, 139, 240);
+  box-shadow: 0px 0px 33px 10px white;
+}
+.sign-up-card > p {
+  margin-left: 5rem;
+}
+.log-in-text {
+  color: rgb(12, 125, 242);
 }
